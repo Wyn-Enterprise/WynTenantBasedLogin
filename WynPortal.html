@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            height: 98vh;
+            position: relative;
+            overflow-y: auto;
+        }
+
+        .container-fluid {
+            height: 100% !important;
+        }
+
+        .row {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            margin-top: 5px !important;
+        }
+
+        .topdiv {
+            margin-top: 10px;
+        }
+
+        .portalDiv {
+            height: 93%;
+        }
+
+        .left {
+            width: 20%;
+        }
+
+        .right {
+            width: 80%;
+        }
+
+        .btn {
+            margin: 5px;
+        }
+
+        .doclistlabel {
+            bottom: 0;
+            font-size: large;
+            font-weight: 500;
+        }
+
+        .list-group {
+            max-height: 530px;
+            overflow: scroll;
+            margin-bottom: 10px !important;
+        }
+
+        .list-group-item {
+            padding: 5px 10px 5px 10px !important;
+        }
+    </style>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="scripts/site.js"></script>
+
+</head>
+<body onload="loadWynPortal()">
+    <div class="container-fluid">
+        <div class="row topdiv">
+            <div class="col-sm-10">
+                <span id="userLabel" style="font-size:large;font-weight:700;margin-left:20px">Welcome</span>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn" id="btnLogout" onclick="btnLogout_click()">Logout</button>
+            </div>
+        </div>
+        <div class="row portalDiv">
+            <iframe id="wynframe" src="" style="height:100%;width:100%"></iframe>
+        </div>
+    </div>
+</body>
+</html>

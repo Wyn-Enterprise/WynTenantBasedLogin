@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="scripts/site.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <!-- signInForm -->
+    <div id="sign-in-root">
+        <label id="sign-in-error" class="sign-in-error"></label>
+        <div class="sign-in-form">
+            <div class="sign-in-control">
+                <input autoFocus type="text" class="sign-in-input" id="wynUrl" placeholder="Portal URL" />
+            </div>
+            <div class="sign-in-control">
+                <input autoFocus type="text" class="sign-in-input" id="username" placeholder="Username" />
+            </div>
+            <div class="sign-in-control">
+                <input autoFocus type="password" class="sign-in-input" id="pswd" placeholder="Password" />
+            </div>
+            <button id="btnLogin" onclick="btnLogin_click()" class="sign-in-button">Sign In</button>
+            <div id="org-root" class="not-displayed">
+                <label class="org-form-label">Please select organization</label>
+                <div class="sign-in-control">
+                    <div id="org-dropdown">
+                        <div class="org-dropdown-title"></div>
+                        <ul class="org-dropdown-options not-displayed"></ul>
+                    </div>
+                </div>
+                <button id="org-select-button" class="sign-in-button" onclick="btnOk_click()">OK</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
